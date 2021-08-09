@@ -239,7 +239,7 @@ abstract class Notification extends \yii\base\BaseObject
      *
      */
     public function send(){
-        $module = Yii::$app->getModule('notifications');
+        $module = Yii::$app->getModule('notificationsmod');
         if(is_null($module)) {
             throw new InvalidConfigException("Please set up the module in the web/console settings, see README for instructions");
         }

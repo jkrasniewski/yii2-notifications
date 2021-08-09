@@ -131,7 +131,7 @@ class WebPushNotificationController extends Controller
 
         $filepath = '/service-worker.js';
 
-        $module = Yii::$app->getModule('notifications');
+        $module = Yii::$app->getModule('notificationsmod');
 
         if(!empty($module->channels['web']['config']['serviceWorkerFilepath'])) {
             $filepath = $module->channels['web']['config']['serviceWorkerFilepath'];

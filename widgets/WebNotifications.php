@@ -44,7 +44,7 @@ class WebNotifications extends \yii\base\Widget
 
 
         // override defaults with config params
-        $module = Yii::$app->getModule('notifications');
+        $module = Yii::$app->getModule('notificationsmod');
 
         /** @var WebChannel|array $webChannel */
         $webChannel = $module->channels['web'];
